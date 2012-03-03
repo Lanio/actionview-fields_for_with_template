@@ -1,25 +1,27 @@
-Actionview-fieldsForWithTemplate
-================================
+# Actionview-fieldsForWithTemplate
 
 Adds the following view helper for work with nested attributes:
 
   fields_for_with_template
 
-This requires NumericSequence, available at github.com/mhs/numeric-sequence.
+This requires NumericSequence, available at github.com/lanio/numeric-sequence.
 
-Example
-=======
+## Example
 
+```erb
   <% @provider.schools.build if @provider.schools.reject(&:marked_for_destruction?).empty? -%>
   <% f.fields_for_with_template :schools do |school_form| %>
     <%= render :partial => "school", :locals => { :form => school_form } %>
   <% end %>
+```
 
 This will produce an additional template element containing the body of the fields for, ie:
 
+```erb
   <div class="template">
     ... whatever render :partial => 'school' produced...
   </div>
+```
   
 It will replace all ids or counters with "NEW_RECORD". You need to supply the JavaScript to handle add, removing, etc, given this.
 
