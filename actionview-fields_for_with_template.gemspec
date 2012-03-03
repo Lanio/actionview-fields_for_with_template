@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["John Hwang", "Zach Dennis"]
   s.email       = ["johnyhwang@gmail.com", "zdennis@mutuallyhuman.com"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{View helper for working with nested attributes}
+  s.description = %q{View helper for working with nested attributes}
 
   s.rubyforge_project = "actionview-fields_for_with_template"
 
