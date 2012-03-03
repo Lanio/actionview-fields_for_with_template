@@ -5,8 +5,8 @@ require "actionview-fields_for_with_template/version"
 Gem::Specification.new do |s|
   s.name        = "actionview-fields_for_with_template"
   s.version     = Actionview::FieldsForWithTemplate::VERSION
-  s.authors     = ["John Hwang"]
-  s.email       = ["johnyhwang@gmail.com"]
+  s.authors     = ["John Hwang", "Zach Dennis"]
+  s.email       = ["johnyhwang@gmail.com", "zdennis@mutuallyhuman.com"]
   s.homepage    = ""
   s.summary     = %q{TODO: Write a gem summary}
   s.description = %q{TODO: Write a gem description}
@@ -19,6 +19,6 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   # specify any dependencies here; for example:
-  # s.add_development_dependency "rspec"
+  s.add_runtime_dependency "numeric-sequence"
   # s.add_runtime_dependency "rest-client"
 end
